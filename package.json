@@ -6,19 +6,53 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "prisma db seed",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate",
+    "db:reset": "prisma migrate reset --force",
+    "mcp:dev": "tsx apps/mcp/src/index.ts",
+    "mcp:build": "tsc -p apps/mcp/tsconfig.json",
+    "health-check": "curl -f http://localhost:3000/api/health || exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@prisma/client": "^6.13.0",
+    "@sentry/nextjs": "^10.3.0",
+    "@supabase/supabase-js": "^2.54.0",
+    "@types/papaparse": "^5.3.16",
+    "axios": "^1.11.0",
+    "date-fns": "^4.1.0",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "next": "15.4.6",
+    "papaparse": "^5.5.3",
+    "prisma": "^6.13.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "swr": "^2.3.5",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.10",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.20.3",
+    "typescript": "^5"
   }
 }

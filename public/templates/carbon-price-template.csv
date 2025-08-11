@@ -1,0 +1,7 @@
+market_code,market_name,instrument_code,instrument_name,date,price,price_type,currency,unit,volume,venue_name,source_url,collected_at,collected_by,qa_status,evidence_file,notes
+EU,EU ETS,EUA,EU Allowance,2024-01-15,65.50,CLOSE,EUR,tCO2e,125000,ICE Endex,https://www.theice.com/products/197,2024-01-15T09:00:00Z,system,PENDING,,Daily settlement price
+UK,UK ETS,UKA,UK Allowance,2024-01-15,35.20,CLOSE,GBP,tCO2e,85000,ICE Endex,https://www.theice.com/products/80984935,2024-01-15T09:00:00Z,system,PENDING,,
+CCA,California Cap-and-Trade,CCA,California Carbon Allowance,2024-01-15,32.80,SETTLEMENT,USD,tCO2e,95000,CARB,https://www.arb.ca.gov/cc/capandtrade,2024-01-15T16:00:00Z,system,PENDING,,
+CEA,中国全国碳市场,CEA,全国碳配额,2024-01-15,85.60,CLOSE,CNY,tCO2e,450000,上海环境能源交易所,http://www.cneeex.com,2024-01-15T09:30:00Z,system,PENDING,,
+CCER,中国CCER,CCER,核证减排量,2024-01-15,45.30,MID,CNY,tCO2e,25000,北京绿色交易所,https://www.cbeex.com.cn,2024-01-15T10:00:00Z,system,PENDING,,Reference price for forestry projects
+CDR,Carbon Removal,CDR-DAC,Direct Air Capture,2024-01-15,550.00,MID,USD,tCO2e,500,CDR.fyi,https://cdr.fyi,2024-01-15T12:00:00Z,system,PENDING,,Median price for DAC projects
