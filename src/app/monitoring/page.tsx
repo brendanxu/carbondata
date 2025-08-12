@@ -300,7 +300,7 @@ export default function MonitoringPage() {
             <ul className="list-disc list-inside space-y-1">
               <li>正常: ≤1天未更新</li>
               <li>警告: 2-3天未更新</li>
-              <li>过期: >3天未更新（触发告警）</li>
+              <li>过期: &gt;3天未更新（触发告警）</li>
               <li>无数据: 从未有数据</li>
             </ul>
           </div>
@@ -309,7 +309,7 @@ export default function MonitoringPage() {
             <ul className="list-disc list-inside space-y-1">
               <li>数据过期: 自动发送告警通知</li>
               <li>系统错误: 立即通知技术团队</li>
-              <li>价格异常: 变动>20%时警告</li>
+              <li>价格异常: 变动&gt;20%时警告</li>
               <li>导入失败: 批量导入失败时通知</li>
             </ul>
           </div>
