@@ -5,10 +5,10 @@ import { QAStatus } from '@prisma/client'
 // POST /api/admin/prices/[id]/reject - 审核拒绝价格数据
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
+    const { id } = await params
     const body = await request.json().catch(() => ({}))
     const reason = body.reason || '数据质量不符合要求'
     

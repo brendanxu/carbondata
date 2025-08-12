@@ -5,10 +5,10 @@ import { QAStatus } from '@prisma/client'
 // POST /api/admin/prices/[id]/approve - 审核通过价格数据
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
+    const { id } = await params
     
     // 查找记录
     const priceRecord = await prisma.dailyPrice.findUnique({
